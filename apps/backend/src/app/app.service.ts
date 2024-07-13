@@ -1,8 +1,9 @@
+import { Message } from '@fullstack-app/interfaces';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
+  getData(): Message {
     return { message: 'Hello API' };
   }
 }
